@@ -445,6 +445,30 @@ width: 100%;
   background-color: #f9f9f9;
 
 }
+.container-img {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.img-container {
+  transition: transform .1s ease;
+}
+
+.img-container:hover {
+  transform: scale(1.4);
+
+}
+
+.container-img img {
+  opacity: .8;
+  transform: translate(0,0);
+  transition: opacity .25s ease-in-out;
+}
+
+.container-img img:hover {
+  opacity: 1;
+}
 
 .texto_present{
   align-items: center;

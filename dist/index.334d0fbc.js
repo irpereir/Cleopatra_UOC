@@ -514,7 +514,16 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"9QlKA":[function(require,module,exports) {
-console.log('Hello world!');
+$(".imagen").mousemove(function(event) {
+    var mousex = event.pageX - $(this).offset().left;
+    var mousey = event.pageY - $(this).offset().top;
+    var imagenx = (mousex - 300) / 40;
+    var imageny = (mousey - 200) / 40;
+    $(this).css("transform", "translate(" + imagenx + "px," + imageny + "px)");
+});
+$(".imagen").mouseout(function() {
+    $(this).css("transform", "translate(0px,0px)");
+});
 
 },{}]},["7EnX3","9QlKA"], "9QlKA", "parcelRequire94c2")
 
