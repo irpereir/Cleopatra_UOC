@@ -1,5 +1,916 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root{
+  --negro: rgb(0, 0, 0);
+  --fondo: rgb(255, 255, 255);
+  --gris:  #f9f9f9;
+  --grisos:#eee;
+  --dorado: #e2b13c;
+}
+html, body{
+  background-color: var(--fondo);
+  box-sizing: border-box;
+}
+
+/*FOOTER*/
+
+footer{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  background-color: var(--negro);
+  color: var(--fondo);
+  justify-content:center ;
+  align-items: center;
+  display: flex;
+}
+
+footer div{
+  width: 60%;
+  text-align: center;
+}
+footer ul{
+  width: 100%;
+  font-weight: 400;
+  padding: 0px;
+}
+footer  a{
+  text-decoration:none;
+  font-size: 0.9vw;
+  color: var(--fondo);
+  padding-left: 0.7vw;
+}
+footer a:hover{
+  color: var(--dorado);
+  text-decoration: overline;
+}
+footer  li{
+  display:inline-block;  
+}
+header{
+  background-color: var(--fondo);
+
+}
+.header{
+  max-width: 60%;
+  margin: auto;
+  padding-top: 1vw;
+  padding-bottom: 0.5vw;
+  text-align: center;
+}
+header a{
+  font-size: 3.2vw ;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--negro);
+}
+
+/*MENÚ*/
+
+.menu{
+  background-color: var(--negro);
+}
+nav{
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+nav ul{
+  width: 100%;
+  align-items: center;
+  font-weight: 600;
+  padding: 0px;
+  margin:auto;
+  color: var(--fondo);
+}
+
+nav ul a:hover{
+  color: var(--dorado);
+}
+
+
+nav a{
+  text-decoration:none;
+  color:inherit;
+  font-size:1vw;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+  } 
+nav li{
+  display:inline-block;      
   }
 
+/*CABECERA*/
+
+  .cabecera{
+      background-image: url(img/jeroglifico.jpg);
+      background-size: cover;
+      height: 750px; 
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      opacity: 90%;
+      
+  }
+  .cabecera p{
+      color: var(--fondo);
+      font-size: 4vw;
+      width: 60%;
+      margin: auto;
+      font-weight: 600;
+      text-align: center;
+  }
+
+  /*INDEX*/
+  main {
+      background-color: var(--fondo);
+      padding-top: 2%;
+      align-items: center;
+  }
+
+  main section{
+      margin: auto;
+      width: 60%;
+      padding-top: 0.7vw;
+      padding-bottom: 0.7vw;
+      align-items: center;
+  
+  }
+
+  section h1{
+      font-size: 2vw;
+      margin-bottom: 00.5vw;
+  }
+
+  .textos p{
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 1.3VW;    }
+  
+.enlaces{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+ .subcontenedor{
+     background-color: white;
+     /*border: 1px solid var(--negro);*/
+      box-shadow:4px 8px 8px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+     padding: 10% 5% ;
+     margin: 20px;
+     text-align: center;
+     background-color:var(--gris);
+ }
+ .subcontenedor h4{
+     font-size: 1.4vw;
+     margin-bottom: 8%;
+ }
+
+ .subcontenedor p{
+     font-size: 1vw;
+     margin-bottom: 8%;
+ }
+
+ .container{
+      background-image: url(img/jeroglificodos.jpg);
+      background-size: cover;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 45px;
+}
+
+ .subcontainer{
+     margin: 10px;
+     padding: 20px;
+     font-size: 1.1vw;
+ }
+
+  .about {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--negro);
+  text-shadow: 0.2vw 0.2vw var(--fondo);
+  font-size: 5vw;
+  font-weight: 800;
+ }
+
+  .presentacion{
+      width: 100%;
+      height: 600px;
+      text-align: justify;
+  }
+
+  .presentacion .container{
+  height: 100%;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  }
+
+  .texto{
+      padding: 40px 35px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 2px;
+  }
+
+  .presentacion p{
+      font-size: 1.2vw;
+  }
+
+/* Botón SABER MÁS*/
+
+  .boton{
+      background-color: var(--fondo); 
+      border: 1px solid var(--negro);
+      border-radius: 2px;
+      color: black;
+      padding: 12px 26px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+
+  .boton:hover{
+      background-color: var(--negro);
+      color: var(--fondo);
+  }
+  /* CATEGORÍAS*/
+
+  .section-categorias{
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  .section-categorias h1{
+      font-size: 2.7vw;
+  }
+  hr{
+      width: 20%;
+      margin: auto;
+  }
+  .contenedor_categoria{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 5%;
+      margin-bottom: 10%;
+  }   
+  .contenido p{
+      font-size: 18px;
+  }
+  .subcontenedor_categoria img{
+      width: 100%;
+  }
+  article{
+      margin: 10px;
+      background-color: var(--gris);
+      padding: 25px;
+      border-radius: 2px;
+  }
+  article .contenido h4,
+  article .contenido .leermas{
+      align-items: center;
+      text-align: center;
+  }
+  article .contenido h4{
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 1.8vw;
+  }
+  article .contenido p{
+      margin-bottom: 10px;
+      text-align: justify;
+  }
+  .leermas .boton{
+      background-color: var(--dorado);
+      color: var(--fondo);
+      border-color: var(--fondo);
+  }
+  .leermas a{
+      font-size: 1.3vw;
+  }
+  .leermas a:hover{
+      font-weight: 600;
+  }
+  .leermas .boton:hover{
+      border-color: var(--dorado);
+      color: var(--dorado);
+      background-color: var(--fondo);
+  }
+/*DETALLE*/
+.detalle{
+  text-align: center;
+  align-items: center;
+  background-color: var(--fondo);
+  margin-bottom: 5%;
+}
+
+.detalle h1{
+  font-size: 2.7vw;
+  margin-bottom: 10px;
+}
+hr{
+  width: 20%;
+  margin: auto;
+}
+.detalle .imagen{
+  margin-top: 25px;
+}
+.detalle .imagen img{
+  width: 100%;
+}
+.detalle section{
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.detalle section h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+.contenedor_lista{
+  display: flex ;
+  background-color: var(--gris);
+  padding: 25px 25px;
+  justify-content: center;
+}
+.subcontenedor_lista{
+  width: 55%; 
+  display: block;
+}
+.subcontenedor_lista img{
+width: 100%;
+}
+
+.lista{
+  width: 40%;
+  background-color: var(--gris);
+  padding-right: 20px;
+  text-align: left;
+  height: fit-content;
+  display: block;
+}
+.lista ul{
+
+}
+.lista li{
+  list-style: none;
+  font-size: 1.4vw;
+}
+
+.cita{
+  background-color: var(--dorado);
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  margin: auto;
+  display: flex;
+  font-size: 3.2vw;
+  font-weight: 400;
+}
+.cita div{
+  margin: 5vw;
+}
+.cita blockquote{
+  margin-bottom: 10px;
+}
+.cita hr{
+  color: black;
+  border: 1px solid var(--fondo);
+}
+.texto_cita{
+  margin-top: 10px;
+  font-size: 1.8vw !important;
+
+}
+.detalle section h2{
+  margin-bottom: 25px;
+}
+
+.detalle section p{
+  font-size: 18px;
+}
+
+/*PRESENTACIÓN*/
+
+.present h1{
+  font-size: 2.7vw;
+  margin-bottom: 10px;
+}
+.present {
+  margin-bottom: 50px;
+  text-align: center;
+
+
+}
+
+.present .contenedor_presentacion .subcontenedor_presentacion{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  column-gap: 50px;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 15px;
+  height: 100%;
+ 
+
+}.present .contenedor_presentacion .subcontenedor_presentacion div{
+  padding: 0px 10px;
+  line-height: 25px;
+  margin-top: 5%;
+
+
+}
+
+.present .contenedor_presentacion .subcontenedor_presentacion .img img{
+  width: 100%;
+  background-color: #f9f9f9;
+
+}
+
+.texto_present{
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+  font-size: 18px;
+
+}
+
+/*ENLACES*/
+
+.enlaces_seccion{
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.contenedor_citas{
+  background-color: var(--gris);
+  padding: 35px;
+  margin: 25px 0px;
+  width: 100%;
+}
+.contenedor_citas p{
+  text-align: left;
+  font-size: 18px;
+  width: 100%;
+}
+.contenedor_citas p a{
+  text-decoration: none;
+  color: var(--dorado);
+  font-weight: 600;
+}
+.contenedor_citas p a:hover{
+  color: var(--negro);
+}
+
+.agradecimientos{
+  background-image: url(img/ruinas\ egipto.jpg);
+  background-size: cover;
+  height: 300px; 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: 100%;
+}
+.agradecimientos p{
+  color: var(--fondo);
+  font-size: 3vw;
+  width: 60%;
+  margin: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) { 
+
+  
+  header a{
+      font-size: 5vw;
+  }
+  nav a{
+      font-size: 1.5vw;
+  }
+
+  .cabecera {
+      height: 550px;
+      background-size: contain;
+  }
+  .enlaces{
+      grid-template-columns: repeat(2,1fr);
+  }
+  .enlaces h4{
+      font-size: 2vw;
+  }
+  .enlaces p{
+      font-size: 1.5vw;
+  }
+  .presentacion .container{
+      display: block;
+  }
+  .presentacion .container .about{
+     display: block;
+
+  }
+  .presentacion p{
+      font-size: 1.6vw;
+
+  }
+  .present .contenedor_presentacion .subcontenedor_presentacion {
+      grid-template-columns: repeat(1,1fr)
+  }
+  footer{
+      display: block;
+      margin: auto;
+  }
+  footer .footer{
+      margin: auto;
+  }
+  footer .copy{
+      margin: auto;
+  }
+  .terminoslegales{
+      margin: auto;
+      padding-bottom: 10px;
+  }
+  footer div{
+      width: 100%;
+   }
+   footer a{
+       font-size: 1.5vw;
+   }
+}
+@media screen and (min-width: 820px) and (max-width: 1024px){
+ 
+  header a{
+      font-size: 5vw;
+  }
+  .menu{
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  nav{
+      height: auto;
+  }
+  nav ul{
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  nav ul li{
+      display: block;
+      padding: 2px;
+  }
+  nav a{
+      font-size: 1.8vw;
+  }
+  .cabecera {
+      height: 450px;
+      background-size: contain;
+  }
+  .enlaces{
+      grid-template-columns: repeat(1,1fr);
+  }
+  .enlaces h4{
+      font-size: 3vw;
+  }
+  .enlaces p{
+      font-size: 2vw;
+  }
+  .presentacion .container{
+      display: block;
+  }
+  .presentacion .container .about{
+     display: block;
+
+  }
+  .contenedor_categoria {
+      
+      grid-template-columns: repeat(1,1fr);
+
+  }
+  article .contenido h4{
+      font-size: 3vw;
+  }
+  .section-categorias h1, .present h1, .enlaces_seccion h1, .detalle h1
+  {
+      font-size: 4vw;}
+
+  
+  .presentacion p{
+      font-size: 2vw;}
+
+      .leermas a{
+          font-size: 2vw;
+      }
+
+      .present .contenedor_presentacion .subcontenedor_presentacion {
+          grid-template-columns: repeat(1,1fr)
+      }
+
+      .agradecimientos p{
+          font-size: 5vw;
+      }
+
+      footer{
+          display: block;
+          margin: auto;
+      }
+      footer div{
+         width: 100%;
+      }
+      footer a{
+          font-size: 1.8vw;
+      }
+      footer .footer{
+          margin: auto;
+      }
+      footer .copy{
+          margin: auto;
+      }
+      .terminoslegales{
+          margin: auto;
+          padding-bottom: 10px;
+      }
+      main .detalle section{
+          width: 80%;
+      }
+      .lista li{
+          font-size: 2.1vw;
+      }
+}
+
+@media screen and (min-width:720px) and (max-width: 819px){
+
+  
+  header a{
+      font-size: 5.5vw;
+  }
+  .menu{
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  nav{
+      height: auto;
+  }
+  nav ul{
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  nav ul li{
+      display: block;
+      padding: 2px;
+  }
+  nav a{
+      font-size: 2.3vw;
+  }
+  .cabecera {
+      height: 450px;
+      background-size: contain;
+  }
+  .enlaces{
+      grid-template-columns: repeat(1,1fr);
+  }
+  .enlaces h4{
+      font-size: 3.2vw;
+  }
+  .enlaces p{
+      font-size: 2.4vw;
+  }
+  .presentacion .container{
+      display: block;
+  }
+  .presentacion .container .about{
+     display: block;
+
+  }
+  .contenedor_categoria {
+      
+      grid-template-columns: repeat(1,1fr);
+
+  }
+  article .contenido h4{
+      font-size: 3vw;
+  }
+  .section-categorias h1, .present h1, .enlaces_seccion h1, .detalle h1
+  {
+      font-size: 4vw;}
+  
+      .leermas a{
+          font-size: 2.2vw;
+      }
+  
+  .presentacion p{
+      font-size: 2.3vw;}
+
+      .present .contenedor_presentacion .subcontenedor_presentacion {
+          grid-template-columns: repeat(1,1fr)
+      }
+
+      .agradecimientos p{
+          font-size: 5vw;
+      }
+
+      footer{
+          display: block;
+          margin: auto;
+      }
+      footer div{
+         width: 100%;
+      }
+      footer a{
+          font-size: 1.8vw;
+      }
+      footer .footer{
+          margin: auto;
+      }
+      footer .copy{
+          margin: auto;
+      }
+      .terminoslegales{
+          margin: auto;
+          padding-bottom: 10px;
+      }
+  
+      main .detalle section{
+          width: 90%;
+      }
+      .detalle .contenedor_lista{
+          display: block;
+      }
+      .lista{
+          margin-bottom: 20px;
+      }
+      .lista li{
+          font-size: 2.1vw;
+      }
+      .lista, .subcontenedor_lista{
+          width: 100%;
+      }
+      .detalle section p{
+          font-size: 14px;
+      }
+
+}
+@media  screen and (max-width:719px) {
+  
+
+  main section{
+      width: 90%;
+  }
+  .contenedor_citas{
+      padding: 0px;
+  }
+  .contenedor_citas p{
+      padding: 10px;
+      width: 90%;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+  }
+  header a{
+      font-size: 6vw;
+  }
+  .menu{
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  nav{
+      height: auto;
+  }
+  nav ul{
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  nav ul li{
+      display: block;
+      padding: 2px;
+  }
+  nav a{
+      font-size: 2.7vw;
+  }
+  .cabecera {
+      height: 320px;
+      background-size: contain;
+  }
+  .cabecera p{
+      font-size: 6vw;
+  }
+  .enlaces{
+      grid-template-columns: repeat(1,1fr);
+  }
+  .enlaces h4{
+      font-size: 4vw;
+  }
+  .enlaces p{
+      font-size: 2.9vw;
+  }
+  .presentacion .container{
+      display: block;
+  }
+  .presentacion .container .about{
+     display: block;
+     font-size: 6.5vw;
+
+  }
+  .contenedor_categoria {
+      
+      grid-template-columns: repeat(1,1fr);
+
+  }
+  article .contenido h4{
+      font-size: 4.2vw;
+  }
+  .section-categorias h1, .present h1, .enlaces_seccion h1, .detalle h1
+  {
+      font-size: 5.5vw;}
+  
+      .leermas a{
+          font-size: 3vw;
+      }
+  
+  .presentacion p{
+      font-size: 3vw;
+      margin-bottom: 2%;}
+
+      .present .contenedor_presentacion .subcontenedor_presentacion {
+          grid-template-columns: repeat(1,1fr)
+      }
+
+      .agradecimientos p{
+          font-size: 5vw;
+      }
+
+
+
+      footer{
+          display: block;
+          margin: auto;
+      }
+      footer div{
+         width: 100%;
+      }
+      footer a{
+          font-size:2.8vw;
+          padding-right: 3px;
+      }
+      footer .footer{
+          margin: auto;
+      }
+      footer .copy{
+          margin: auto;
+          font-size: 12px;
+
+      }
+      .terminoslegales{
+          margin: auto;
+          padding-bottom: 10px;
+      }
+
+      .contenedor_citas p a{
+         padding-right: 20px;
+         font-size: small;
+      }
+      main .detalle section{
+          width: 90%;
+      }
+      .detalle .contenedor_lista{
+          display: block;
+      }
+      .lista{
+          margin-bottom: 20px;
+      }
+      .lista li{
+          font-size: 2.7vw;
+      }
+      .lista, .subcontenedor_lista{
+          width: 100%;
+      }
+      .detalle section p{
+          font-size: 14px;
+      }
+
+      .cita{
+          height: 200px;
+      }
+}
