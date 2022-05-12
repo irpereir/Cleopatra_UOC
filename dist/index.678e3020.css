@@ -607,12 +607,9 @@ hr {
 }
 
 .despedida p {
-  margin-top: .3vw;
+  margin-top: .4vw;
   margin-bottom: .2vw;
-}
-
-.despedida svg {
-  width: 100%;
+  font-size: 18px;
 }
 
 .enlaces_seccion {
@@ -838,6 +835,10 @@ section {
   .lista li {
     font-size: 2.1vw;
   }
+
+  .despedida {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 720px) and (max-width: 819px) {
@@ -961,6 +962,10 @@ section {
 
   .detalle section p {
     font-size: 14px;
+  }
+
+  .despedida {
+    width: 90%;
   }
 }
 
@@ -1130,6 +1135,12 @@ section {
 
   .despedida {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .despedida svg {
+    display: none;
   }
 }
 
