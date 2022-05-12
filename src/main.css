@@ -30,6 +30,7 @@ footer{
   justify-content:center ;
   align-items: center;
   display: flex;
+  text-align: center;
 }
 
 footer div{
@@ -54,6 +55,12 @@ footer a:hover{
 footer  li{
   display:inline-block;  
 }
+
+footer img{
+    margin: auto;
+    max-width: 30%;
+
+}
 header{
   background-color: var(--fondo);
 
@@ -70,6 +77,9 @@ header a{
   text-decoration: none;
   font-weight: 800;
   color: var(--negro);
+}
+header img{
+    max-width: 40%;
 }
 
 /*MENÚ*/
@@ -109,6 +119,7 @@ nav li{
   display:inline-block;      
   }
 
+
 /*CABECERA*/
 
   .cabecera{
@@ -119,6 +130,10 @@ nav li{
       display: flex;
       justify-content: center;
       opacity: 90%;
+      clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    background-size: cover;
+  	background-position: top;
+  	position: relative;
       
   }
   .cabecera p{
@@ -367,9 +382,7 @@ width: 100%;
   height: fit-content;
   display: block;
 }
-.lista ul{
 
-}
 .lista li{
   list-style: none;
   font-size: 1.4vw;
@@ -385,6 +398,7 @@ width: 100%;
   display: flex;
   font-size: 3.2vw;
   font-weight: 400;
+  overflow: hidden;
 }
 .cita div{
   margin: 5vw;
@@ -408,6 +422,75 @@ width: 100%;
 .detalle section p{
   font-size: 18px;
 }
+
+.detalle .figura{
+    background-color: #e2b13c;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/cetros.webp);
+    background-size: cover;
+    height: 30vw;
+    clip-path: polygon(35% 25%, 95% 4%, 100% 60%, 63% 97%, 11% 84%, 0% 60%, 19% 5%);
+
+}
+
+.figura:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+/*ANIMACIÓN*/
+
+ #brazo{
+    animation: hola 600ms  ease infinite;
+    transform-origin: center;
+
+}
+
+#textouno, #textodos,  #textotres, #textocuatro, #textocinco{
+    animation: opacidad 2s linear infinite;
+}
+#cita, #citados{
+  
+    animation: opacidaddos 5s infinite alternate;
+
+}
+
+@keyframes opacidaddos {
+    0% { opacity: 1; }
+    25%{opacity: 1;}
+    50% { opacity: 0; }
+    75%{opacity: 1;}
+    100% { opacity: 1; }
+}
+
+@keyframes opacidad {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    15% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes hola {
+      from{
+          transform:rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+      }
+      to{transform:rotateY(5deg) rotateZ(5deg) rotateX(5deg);}
+  }
+
+ 
+ 
+  @keyframes aparecer {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 /*PRESENTACIÓN*/
 
@@ -478,6 +561,25 @@ width: 100%;
 
 }
 
+.despedida{
+    background-color: var(--gris);
+    padding: 2vw;
+    width: 50% ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.despedida p{
+    margin-bottom: 0.2vw;
+    margin-top: 0.3vw;
+
+}
+.despedida svg{
+    width: 100%;
+}
+
 /*ENLACES*/
 
 .enlaces_seccion{
@@ -522,6 +624,16 @@ width: 100%;
   margin: auto;
   font-weight: 600;
   text-align: center;
+}
+section {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes_galeria img{
+    margin-top: 00px;
+    margin-bottom: 10px;
 }
 
 
@@ -823,15 +935,18 @@ width: 100%;
       height: auto;
   }
   nav ul{
-      padding-top: 2%;
-      padding-bottom: 2%;
+      padding-top: 3%;
+      padding-bottom: 3%;
   }
   nav ul li{
       display: block;
       padding: 2px;
+      padding-top: 1%;
+      padding-bottom: 1%;
   }
   nav a{
-      font-size: 2.7vw;
+      font-size: 3.6vw;
+
   }
   .cabecera {
       height: 320px;
@@ -936,5 +1051,8 @@ width: 100%;
 
       .cita{
           height: 200px;
+      }
+      .despedida{
+          width: 90%;
       }
 }

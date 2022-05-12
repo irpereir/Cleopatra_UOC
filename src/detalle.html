@@ -12,7 +12,7 @@
 <body>
     <header >
         <div class="header">
-            <a href="index.html">CLEOPATRA</a>
+            <a href="index.html"><img src="img/logo_cleopatra.png" alt=""></a>
         </div>
     </header>
     <div class="menu">
@@ -30,7 +30,11 @@
             <h1>Los inicios de Cleopatra</h1>
             <hr>
             <div class="imagen">
-                <img src="img/diosa_egipto.jpg" alt="">
+                <picture>
+                    <source media="(max-width:789px)" srcset="img/diosa_egipto_small.jpg">
+                    <source media="(min-width:790px )" srcset="img/diosa_egipto.jpg">
+                    <img src="img/diosa_egipto.jpg" alt="Cleopatra reina de egipto jeroglífico">
+                </picture>
             </div>
             <section class="contenedor_lista">
                 
@@ -47,7 +51,7 @@
                     </ul>
                 </div>
                 <div class="subcontenedor_lista">
-                    <img src="img/temploegipto.jpg" alt="">
+                    <img src="img/piramides.png" alt="">
                 </div>
             </section>
             <section>
@@ -59,10 +63,10 @@
             <section class="cita">
                 <div>
                     <blockquote>
-                        <cite>«La celeridad nunca es más admirada que por los negligentes»</cite>
+                        <cite id="citados">«La celeridad nunca es más admirada que por los negligentes»</cite>
                     </blockquote>
-                    <hr>
-                    <p class="texto_cita">Cleopatra</p>
+                    <hr id="citados">
+                    <p class="texto_cita"id="citados">Cleopatra</p>
 
                 </div>
             </section>
@@ -74,6 +78,10 @@
                 <p>Cras sed ultricies lacus. Mauris diam turpis, pretium a dapibus vel, placerat elementum enim. Nunc vel tincidunt enim. Duis ac pharetra nulla. Pellentesque faucibus semper justo, ut porta tellus eleifend sed. Nullam porttitor rutrum nisi quis consequat. Quisque non elit sollicitudin, gravida arcu vitae, faucibus enim. Nam nec hendrerit est. Curabitur faucibus accumsan augue porttitor hendrerit. 
                 Pellentesque volutpat eu arcu sed congue. Maecenas ullamcorper egestas dapibus. Quisque consequat rutrum lorem, non accumsan tellus tincidunt quis. Nunc gravida turpis a ex imperdiet consequat. Phasellus tempus justo augue, quis dictum metus accumsan a. Etiam enim felis, varius vitae nulla nec, aliquet ullamcorper ante. Sed sollicitudin rutrum lacus, in luctus ipsum hendrerit eu. Etiam finibus libero et nunc auctor laoreet. Quisque dui turpis, rutrum eget posuere non, aliquet non arcu. Vivamus posuere, est nec consectetur sodales, arcu arcu eleifend neque, vel porta dolor velit sit amet velit. Pellentesque finibus consequat imperdiet.</p>    
             </section>
+            <section class="figura">
+                
+            </section>
+
             <section>
                 <h2>Asesinato de Pompeyo</h2>
                 <p>Suspendisse varius ultrices nulla non dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut consectetur finibus lobortis. Praesent sed finibus felis. Pellentesque nec semper est, vel congue nunc. Aliquam fermentum in magna a blandit. Donec sed dolor libero. Praesent molestie malesuada nibh, ut dapibus dolor faucibus eget. Nam odio nulla, commodo quis dui et, tincidunt facilisis metus. Aenean iaculis venenatis venenatis. Duis placerat libero ac nibh cursus, sit amet laoreet dolor mattis. Nulla facilisi. Sed massa lorem, blandit a enim eget, tempus facilisis ex. Donec in rutrum lectus. 
@@ -94,8 +102,7 @@
                 </ul>
             </div>
         </div>
-        <div class="copy"> Actividad realizada por Iris Pereira para la asignatura Herramientas de HTML & CSS, UOC.</div>
-    </footer>
+        <div class="copy"> <img src="img/logo_cleopatra_blanco.png" alt=""></div>    </footer>
 
 </body>
 </html>
