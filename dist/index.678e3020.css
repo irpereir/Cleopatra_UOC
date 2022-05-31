@@ -61,6 +61,7 @@ footer li {
 
 footer img {
   max-width: 30%;
+  height: auto;
   margin: auto;
 }
 
@@ -85,6 +86,7 @@ header a {
 
 header img {
   max-width: 40%;
+  height: auto;
 }
 
 .menu {
@@ -128,7 +130,7 @@ nav li {
   height: 750px;
   opacity: .9;
   clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
-  background-image: url("jeroglifico.91cbb203.jpg");
+  background-image: url("jeroglifico.d4d98bdc.webp");
   background-position: top;
   background-size: cover;
   justify-content: center;
@@ -199,7 +201,7 @@ section h1 {
 }
 
 .container {
-  background-image: url("jeroglificodos.28ce6f7b.jpg");
+  background-image: url("jeroglificodos.eff4e9ed.webp");
   background-size: cover;
   grid-template-columns: repeat(2, 1fr);
   padding: 45px;
