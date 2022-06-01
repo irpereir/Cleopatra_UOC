@@ -566,6 +566,7 @@ hr {
 
 .present .contenedor_presentacion .subcontenedor_presentacion .img img {
   width: 100%;
+  height: auto;
   background-color: #f9f9f9;
 }
 
