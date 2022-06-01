@@ -85,8 +85,8 @@ header a {
 }
 
 header img {
-  max-width: 40%;
   height: auto;
+  max-width: 40%;
 }
 
 .menu {
@@ -294,8 +294,8 @@ hr {
 }
 
 .subcontenedor_categoria img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 article {
@@ -363,6 +363,7 @@ hr {
 }
 
 .detalle .imagen img {
+  height: auto;
   width: 100%;
 }
 
