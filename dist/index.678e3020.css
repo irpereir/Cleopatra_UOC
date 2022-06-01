@@ -295,6 +295,7 @@ hr {
 
 .subcontenedor_categoria img {
   width: 100%;
+  height: auto;
 }
 
 article {
@@ -1084,6 +1085,8 @@ section {
   }
 
   footer a {
+    max-width: auto;
+    height: auto;
     padding-right: 3px;
     font-size: 2.8vw;
   }
