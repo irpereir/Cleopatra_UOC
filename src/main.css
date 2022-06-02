@@ -377,6 +377,7 @@ height: auto;
   display: block;
 }
 .subcontenedor_lista img{
+    height: auto;
 width: 100%;
 }
 
@@ -530,8 +531,8 @@ width: 100%;
 }
 
 .present .contenedor_presentacion .subcontenedor_presentacion .img img{
+    height: auto;
   width: 100%;
-  height: auto;
   background-color: #f9f9f9;
 
 }
@@ -640,6 +641,8 @@ section {
 .imagenes_galeria img{
     margin-top: 00px;
     margin-bottom: 10px;
+    height: auto;
+    width: 100%;
 }
 
 

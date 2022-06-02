@@ -390,6 +390,7 @@ hr {
 }
 
 .subcontenedor_lista img {
+  height: auto;
   width: 100%;
 }
 
@@ -565,8 +566,8 @@ hr {
 }
 
 .present .contenedor_presentacion .subcontenedor_presentacion .img img {
-  width: 100%;
   height: auto;
+  width: 100%;
   background-color: #f9f9f9;
 }
 
@@ -673,6 +674,8 @@ section {
 }
 
 .imagenes_galeria img {
+  height: auto;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 10px;
 }
